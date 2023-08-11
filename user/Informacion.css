@@ -1,0 +1,47 @@
+body {
+    background-image: url('../imagenes/cat2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 3.0;
+}
+.h1{
+    font-size: 70px;
+    color: black;
+    margin: 20;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.tamaño{
+    font-size: 70px;
+    color: black;
+    margin: 20;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.parrafo{
+    text-align: center;
+    color:black;
+    background-color:rgba(248, 246, 246, 0.2);;
+    padding: 0 70px;
+    margin: 50px 180px;
+    border-radius: 400px;
+}
+.menu{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    background: #244b64;
+    width: 90%;
+    max-width: 1000px;
+    left: 200px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}

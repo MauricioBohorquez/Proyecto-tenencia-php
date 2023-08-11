@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(100deg, #1E90FF, #FFF8DC);
+}
+.Parrafo1{
+    text-align: center;
+    color:#000;
+    background: #FFF;
+    padding: 0 70px;
+    margin: 20px 180px;
+}
+.Parrafo2{
+    text-align: center;
+    color:#000;
+    background: #FFF;
+    padding: 0 70px;
+    margin: 20px 180px;
+}
+.Parrafo3{
+    text-align: left;
+    color:#000;
+    background: #FFF;
+    padding: 0 70px;
+    margin: 20px 180px;
+}
+.Parrafo4{
+    text-align: center;
+    color:#000;
+    background: #FFF;
+    padding: 0 70px;
+    margin: 20px 180px;
+}
+.imagen{
+    margin: 10px 540px;
+}
