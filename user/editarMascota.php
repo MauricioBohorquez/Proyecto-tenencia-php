@@ -65,7 +65,7 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
             mysqli_query($conexion, $sql2);
 
             if ($sql2) {
-            $_SESSION['idUsuario'] = $Usuario_Id; // No necesitas hacer otra consulta aquí
+            $_SESSION['idUsuario'] = $Usuario_Id; 
             header("location:perfilUsuario.php?idUsuario=$_SESSION[idUsuario]");
             exit;
 
