@@ -46,6 +46,7 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
     </html>
 
     <?php
+    session_start();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //traer los datos por post
@@ -56,7 +57,7 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
         $tipo = isset($_POST['Tipo']) ? $_POST['Tipo'] : '';
         $color = isset($_POST['Color']) ? $_POST['Color'] : '';
         $alimento = isset($_POST['Alimento']) ? $_POST['Alimento'] : '';
-
+        $Usuario_Id = isset($_POST['fkusu']) ? $_POST['fkusu'] : '';
 
         if ($nombre != null || $edad != null || $raza != null || $sexo != null || $tipo != null || $color != null || $alimento != null) {
 
@@ -64,14 +65,14 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
             mysqli_query($conexion, $sql2);
 
             if ($sql2) {
-                header("location:../user/perfilUsuario.php");
+            $_SESSION['idUsuario'] = $Usuario_Id; // No necesitas hacer otra consulta aquí
+            header("location:perfilUsuario.php?idUsuario=$_SESSION[idUsuario]");
+            exit;
+
             } else {
                 echo "error al actualizar";
             }
         }
     }
-
-
-
 
     ?>
